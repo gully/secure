@@ -1,11 +1,11 @@
 secure
 ======
 
-Python program that keeps an eye on `/var/log/secure` and reports "Failed password" attempts.
+Python program that keeps an eye on `/var/log/secure.log` and reports "Failed password" attempts.
 
 Features:
 --------
-* Checks the file `/var/log/secure` every minute for new occurrence of **Failed password** message(s).
+* Checks the file `/var/log/secure.log` every minute for new occurrence of **Failed password** message(s).
 * If new attempt is found, it stores details in the SQLite database.
 * After adding details to the database, it raises a desktop notification informing the user about the break-in attempt.
 
